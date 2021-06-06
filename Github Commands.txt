@@ -1,0 +1,54 @@
+*******GIT COMMANDS PRACTICE*******
+
+#open gitbash by right click on your Desktop and choose gitbash here.
+
+#command to check the present working directory
+pwd
+
+#command to create a new folder/directory
+mkdir 
+
+#command to check the full list of files and folders available in the current directory
+ls
+
+#commmand to change the folder/directory means going inside another folder
+cd folderName
+
+#command to download the git repository from internet- (copy the link and paste in " " )
+git clone "https:// .........."
+
+#Then go inside the folder that you have downloaded, using the given comand
+cd downloadedFolderName
+ 
+ 
+#open the file in Visual studio code or in any other editor, make some changes or do your work there, then save. 
+
+#command to login to github account by writing username and password
+#if you are not logged in, then a window open at the bottom, click on it and then login using github email,password.
+
+git config --global user.name"YouGithubAccountName"
+git confif --global user.email"githubEmail@gmail.com"
+
+#After successful login, you can now add the files in which you made changes. You can add any number of files.
+git add file1Name.js file2Name.js
+
+#Next step is to commit the changes, the same way we click on green commit button after uploading.
+#but this time, we need to do the same using git bash.
+
+git commit -m "message to be printed"
+
+#Now its time to remotely push it into your github account
+#For this, open your github page and create a new repository(empty). Copy its link.
+
+git remote add test "https://............"
+
+#command to push(insert) the files into your own created repository. -u means username
+git push -u test
+
+#Just wait for 5 seconds and it will be done. Type the following command for confirmation.
+git log
+
+#Finally, go to your own repository page where you copied the link and then refresh that same page.
+#You will see that your all files are uploaded succesfully :) 
+
+
